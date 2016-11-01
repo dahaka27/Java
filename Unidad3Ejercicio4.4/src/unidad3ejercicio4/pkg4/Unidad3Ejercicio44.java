@@ -21,24 +21,31 @@ public class Unidad3Ejercicio44 {
         primo o no. Utilízalo en un programa que solicite un número, N, y genere los N primeros números
         primos.*/
         
-        Scanner tc=new scanner(System.in);
-            System.out.println("Dame el numero");
-        int n=tc.nextInt();
-        
-        /**
-         * 
-         * @param num1
-         * @param num2
-         * @return 
-         */
-        public static boolean esPrimo (int num){
-        
-            boolean primo;
-            if (num == num/num || num == num/1){
-                primo = true;
-            }else{
-                primo = false;
-            }
-            return respuesta;   
+        Scanner tc = new Scanner(System.in);
+
+        System.out.println("Dame el numero");
+        int numero = tc.nextInt();
+        int numero1 = numero;
+        int n1;
+        for (n1 = 1; n1 >= numero1; n1++) {
+            System.out.println(esPrimo(numero1));
         }
     }
+
+    /**
+     * Que numeros son primos
+     *
+     * @param num
+     * @return respuesta
+     */
+    public static boolean esPrimo(int num) {
+
+        boolean primo;
+        if (num == (num / num) && num == (num / 1)) {
+            primo = true;
+        } else {
+            primo = false;
+        }
+        return primo;
+    }
+}

@@ -25,10 +25,9 @@ public class Unidad3Ejercicio44 {
 
         System.out.println("Dame el numero");
         int numero = tc.nextInt();
-        int numero1 = numero;
         int n1;
-        for (n1 = 1; n1 >= numero1; n1++) {
-            System.out.println(esPrimo(numero1));
+        for (n1 = 1; n1 >= numero; n1++) {
+            System.out.println(esPrimo(numero));
         }
     }
 

@@ -30,12 +30,10 @@ public class Unidad3Ejercicio44 {
             System.out.println(esPrimo(numero));
         }
     }
-
     /**
      * Que numeros son primos
-     *
      * @param num
-     * @return respuesta
+     * @return primo
      */
     public static boolean esPrimo(int num) {
 

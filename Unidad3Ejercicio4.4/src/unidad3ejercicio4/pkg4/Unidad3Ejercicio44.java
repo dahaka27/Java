@@ -33,12 +33,12 @@ public class Unidad3Ejercicio44 {
          */
         public static boolean esPrimo (int num){
         
-            
-            if (num =){
-            
+            boolean primo;
+            if (num == num/num || num == num/1){
+                primo = true;
+            }else{
+                primo = false;
             }
-        
+            return respuesta;   
         }
     }
-    
-}
